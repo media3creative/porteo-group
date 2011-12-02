@@ -1,0 +1,99 @@
+- @sitename = "Porteo Group"
+
+// MAIN NAVIGATION
+- @link1 = ["Home", "/home"]
+- @link2 = ["About", "/about"]
+- @link3 = ["Services", "/services"]
+- @link4 = ["Events", "/events"]
+- @link5 = ["Contact", "/contact"]
+- @link6 = ["Businesses", "/businesses"]
+
+
+
+
+!!! 5
+%html
+  %head
+    %title= @sitename + @title + @subtitle
+
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+
+    %link{:href => "/images/favicon.png", :rel => "icon"}
+    %link{:href => "/images/appleIcon-1.png", :rel => "apple-touch-icon"}/
+    %link{:href => "/images/appleIcon-2.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "/images/appleIcon-3.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+
+    %link{:href => "stylesheets/font-face.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/stylesheet-splash.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/footer.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+    %script{:type => "text/javascript", :src => "javascripts/respond.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/application.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.hoverIntent.minified.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.nivo.slider.pack.js"}
+
+    // MOBILE FOOTER FIX
+    :javascript
+      //$(document).ready(function () {
+        if(
+          navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/iPad/i)
+        ){
+          $('head').append('<link rel="stylesheet" href="/stylesheets/mobile.css" type="text/css" />');
+        }
+      //}
+
+    // INTERNET EXPLORER STYLE
+    /[if IE]
+      <link rel="stylesheet" type="text/css" href="/stylesheets/all-ie-only.css" />
+
+          
+
+
+  %body{:class => @body_class}
+    .wrapper
+      .center
+        .content
+          #logo
+            %img{:src => "/images/logo2.png"}
+          #text
+            %h1 Coming Soon.
+            %h3 [ Warehousing | Transportation | Distribution ]
+            %p We offer creative logistics solutions in Mexico and in the United States. We offer: tailored warehousing and distribution; cost reduction in every step of the process; door-to-door services with no intermediaries; the latest information technology to meet your needs.
+            %p.contact-form
+              Send us your questions:
+              %br
+              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "440", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/s7x3a7/", :width => "80%", :border => "none"}
+    %footer
+      .center
+        %p
+          %b Houston
+          713-429-4369
+          = " | "
+          //%br
+          %b San Antonio
+          210-479-1932
+          = " | "
+          //%br
+          %b Monterrey
+          +52 818-625-9000
+          %br
+          %a{:href => "mailto:info@porteogroup.com"} info@porteogroup.com
+
+
+                  
+    .omg-bar
+      .copyright
+        :markdown
+          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](#). All Rights Reserved.
+      .powered-by
+        :markdown
+          Powered by [Ovalle Media Group](http://ovallemg.com/)
+          
+          
