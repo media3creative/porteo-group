@@ -13,12 +13,10 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	//background: $image-slider-bg
+	background: transparent
 	.center
 		@extend .center-container
-		padding: $v-gap 0 ($v-gap/2)
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
+		padding: $v-gap/2 0 ($v-gap/2)
 		.captionContainer
 			@extend .box
 			position: absolute
@@ -28,40 +26,28 @@
 			left: 0
 			margin: 0
 			padding: 5px
-			background: $secondary
+			background: transparent
 			h1
 				@extend .box
-				@extend .font-Helvetica
-				margin: 5px 15px
+				margin: 5px 75px
 				padding: 0
-				color: $image-slider-title
-				//opacity: 0.85
-				font-size: 30px
+				color: #fff
+				font-family: "Helvetica"
 				font-weight: bolder
+				font-size: 44px
+				text-shadow: 0px 0px 5px #000
 				text-align: left
 				line-height: 1em
-				word-spacing: .1em
-				letter-spacing: -0.05em
 			h3
-				@extend .font-base
-				//@extend .corner-right
 				@extend .box
-				position: relative
-				top: 0px
-				margin: 0 15px 10px
+				margin: 5px 75px
 				padding: 0
-				color: $gray-light
-				//background: $secondary
-				//opacity: 0.85
-				font-size: 14px
-				font-weight: 200
+				color: #fff
+				font-family: "Helvetica"
+				font-size: 20px
+				text-shadow: 0px 0px 5px #000
 				text-align: left
-				line-height: 1.1em
-				//word-spacing: .05em
-				//letter-spacing: .025em
-				//border: 1px solid #000
-				&:hover
-					//opacity: 0.75
+				line-height: 1em
 			p.link
 				@extend .bg-gradient-primary
 				@extend .box
@@ -157,22 +143,22 @@
 	
 .nivo-directionNav a 
 	position: absolute
-	top: 79%
+	top: 50%
 	z-index: 9
 	cursor: pointer
 	display: block
-	width: 30px
-	height: 30px
+	width: 35px
+	height: 54px
 	background: url(/images/nivo/arrows.png) no-repeat
 	text-indent: -9999px
 	border: 0
 
 a.nivo-prevNav 
-	right: ($h-gap + 25px)
+	left: ($h-gap - 15px)
 
 a.nivo-nextNav 
 	right: ($h-gap - 15px)
-	background-position: -30px 0
+	background-position: -35px 0
 
 
 // Control nav styles (e.g. 1,2,3...) //
@@ -193,8 +179,8 @@ a.nivo-nextNav
 	height: $slider-height
 	margin: 0 auto
 	overflow: hidden
-	border: 1px solid $image-slider-border	
-	background: $image-slider-bg
+	border: 1px solid $g2	
+	background: #fff
 
 #slider
 	@extend .box

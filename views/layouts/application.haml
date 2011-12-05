@@ -1,33 +1,11 @@
-- @sitename = "Anna Knows"
+- @sitename = "Porteo Group Logistics"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/about"]
-- @link3 = ["Services", "/services"]
-- @link4 = ["Events", "/events"]
-- @link5 = ["Contact", "/contact"]
-- @link6 = ["Businesses", "/businesses"]
-
-// SUB NAVIGATION
-- @link6A = ["Apparel / Accessories", "appacc"]
-- @link6B = ["Books", "books"]
-- @link6C = ["Business Services", "businesses"]
-- @link6D = ["Energy", "energy"]
-- @link6E = ["Event Planning", "events"]
-- @link6F = ["Food / Desserts", "food"]
-- @link6G = ["Gifts", "gifts"]
-- @link6H = ["Health &amp; Beauty", "healthbeauty"]
-- @link6I = ["Home Decor", "homedecor"]
-- @link6J = ["Home Parties", "homeparties"]
-- @link6K = ["Insurance", "insurance"]
-- @link6L = ["Jewelry", "jewelry"]
-- @link6M = ["Lawn & Garden", "lawngarden"]
-- @link6N = ["Legal Services", "legal"]
-- @link6O = ["Personal Services", "personal"]
-- @link6P = ["Photography", "photo"]
-- @link6Q = ["Real Estate", "realestate"]
-- @link6R = ["Travel", "travel"]
-
+- @link2 = ["About", "/#"]
+- @link3 = ["Supply Chain Services", "/#"]
+- @link4 = ["Consultation", "/#"]
+- @link5 = ["Contact", "/#"]
 
 // FOOTER LINKS
 - @linkA1 = ["Anna Jennings", "ssss"]
@@ -220,9 +198,6 @@
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
           %li
-            %a#six.topnav{:href => @link6[1]}
-              =@link6[0]
-          %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
           %li
@@ -240,30 +215,14 @@
             %p.logo-sm
               %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
               %br
-              Anna Knows | Dedicated to connecting the consumer and business owner
+              Porteo Group Logistics
+              %br
+              Warehousing | Transportation | Distribution
           .row
             %p
-              =@linkA1[0]
-              =" | "
-              =@linkA2[0]
-              =" | "
-              %a{:href => @linkA3[1]}
-                =@linkA3[0]
-              =" | "
-              %a{:href => @linkA4[1]}
-                =@linkA4[0]
-          .row
-            %p
-              %a{:href => @linkB1[1], :target => "_blank"} 
-                %img.icon{:src => "/images/facebook-color.png"}
-                =@linkB1[0]              
-              %a{:href => @linkB2[1], :target => "_blank"} 
-                %img.icon{:src => "/images/twitter-color.png"}
-                =@linkB2[0]
-              %a{:href => @linkB3[1], :target => "_blank"} 
-                %img.icon{:src => "/images/linkedin-color.png"}
-                =@linkB3[0]
-              
+              Houston 713-429-4369 | San Antonio 210-479-1932 | Monterrey +52 818-625-9000 
+              %br
+              %a{:href=>"mailto:info@porteogroup.com"}info@porteogroup.com              
                   
     .omg-bar
       .copyright

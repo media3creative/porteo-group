@@ -10,16 +10,15 @@
 
 #header
 	@extend .box
-	@extend .bg-gradient-primary
 	width: 100%
 	height: $header-height
 	margin: 0
 	padding: 0
-	border-bottom: 2px solid $header-border
+	background: transparent
 	.center
 		@extend .center-container
-		@extend .bg-gradient-primary
 		@extend .box
+		background: transparent
 		#logo1
 			@extend .box
 			position: absolute
@@ -30,8 +29,6 @@
 				display: block
 				margin: 0
 				padding: 0
-				&:hover
-					@extend .opaque
 				img
 					width: $logoW
 					height: $logoH
@@ -43,21 +40,29 @@
 			
 // NAVMENU
 ul#topnav
-	font-family: "EmbedFont-1"
+	@extend .font-base
+	@extend .corner-all
+	@extend .box
 	+float-right
-	margin: 20px 1px 0 ($logoW + 5px + $h-gap)
+	margin: 37px 1px 0 ($logoW + 5px + $h-gap)
 	padding: 0
-	color: $nav-text
-	font-size: 11px
+	color: $g6
+	font-size: 10px
 	letter-spacing: 0.05em
 	list-style: none
 	z-index: 50
+	background: #fff
+	border: 1px solid $g2
+	overflow: hidden
 
 ul#topnav li 
 	position: relative
 	+float-left
 	margin: 0
 	padding: 0
+	border-right: 1px solid $g1
+	&:last-child
+		border-right: 0px
 
 ul#topnav li a 
 	+float-left
@@ -65,79 +70,20 @@ ul#topnav li a
 
 ul#topnav a.topnav
 	@extend .box
-	margin: 6px -1px 0 0
-	padding: .5em 1.8em .4em 1.8em
+	margin: -1px 0
+	padding: 12px 1.8em
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
-	border-left: 1px solid $nav-lines
-	border-right: 1px solid $nav-lines
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
-	color: $nav-text-hover
-	background: $nav-bg
+	background: #fafafa
  
-ul#topnav li .sub 
-	@extend .corner-bottom
-	//@extend .opaque
-	display: none
-	position: absolute
-	+float-left
-	top: 2.7em
-	left: 0px
-	background: $nav-dropdown-bg
-	padding: 5px 0 6px 0
-	z-index: 50
 
-ul#topnav li .row 
-	+float-left
-	clear: both
-	width: 100%
-	margin-bottom: 10px
-
-ul#topnav li .sub ul
-	+float-left
-	margin: 0
-	padding: 0
-	list-style: none
-
-ul#topnav .sub ul li 
-	width: 140px
-
-ul#topnav .sub ul li h2 a 
-	margin: 0 0 .5em 0
-	background-image: none
-
-ul#topnav .sub ul li a
-	@extend .box
-	display: block
-	float: none
-	width: 100%
-	height: auto
-	margin: 0
-	padding: 0.5em 1em
-	color: $nav-dropdown-text
-	background: $nav-dropdown-bg
-	text-indent: 0
-	text-decoration: none
-
-ul#topnav .sub ul li a:hover
-	color: $nav-dropdown-hover
-	background: $nav-dropdown-bg-hover
-
-ul#topnav .sub ul li h2 
-	margin: 0 0 .5em 0
-	padding: 0
-	color: #999
-	font-weight: bolder
 
 
 
 
 //Navigation Active Classes
 body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six
-	@extend .navigation-hover
-
-.navigation-hover
-	//@extend .bg-gradient-secondary
-	color: $nav-text-hover
+	background: #efefef
