@@ -14,12 +14,9 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	//background: $image-slider-bg
 	.center
 		@extend .center-container
-		padding: $v-gap 0 ($v-gap/2)
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
+		padding: ($v-gap/2) 0
 		.content
 			@extent .box
 			width: $inside-width
@@ -32,9 +29,8 @@
 				height: $banner-height
 				margin: 0
 				padding: 0
-				border: 1px solid $image-slider-border	
+				border: 1px solid $g3	
 				
-
 
 .body
 	@extend .box
@@ -46,8 +42,6 @@
 		@extend .center-container
 		@extend .clearfix
 		padding: ($v-gap/2) 0
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
 		.content
 			@extent .box
 			width: $inside-width
@@ -77,10 +71,9 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		@extend .font-helvetica
+		@extend .font-base
 		position: relative
-		color: $option-title
-		background: $option-title-bg
+		color: $g9
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
 		padding: 1em 0
@@ -90,10 +83,9 @@
 	h3
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		@extend .font-base                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 		position: relative
-		color: $option-title
-		background: $option-title-bg
+		color: $g9
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
 		padding: 0
@@ -104,7 +96,7 @@
 
 .link
 	@extend .clearfix
-	font-family: "EmbedFont-1"
+	@extend .font-base
 	@extend .box
 	position: relative
 	width: ($option-width - ($h-gap *2))
@@ -124,7 +116,7 @@
 		top: 5px
 		width: 7px
 		height: 7px
-		background: $primary-dark
+		background: $red
 		font-size: 11px
 		text-align: center
 	p
@@ -135,50 +127,42 @@
 		width: 200px
 		margin: 0
 		padding: 0 0 0 1em
-		font-size: 13px
+		font-size: 12px
 		a
 			font-size: 12px
-			color: $option-link
+			color: $g9
 			&:hover
-				color: $option-link-hover
+				color: $red
 				text-decoration: none
 					
 // Text-style sidebar box
 .text
 	p
-		font-family: "EmbedFont-1"
+		@extend .font-base
 		@extend .box
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: $option-text
-		font-size: 13px
-		font-weight: 200
-		text-align: justify
-		line-height: 1.7em
+		color: $g8
+		font-size: 12px
 		&:last-child
 			margin-bottom: ($v-gap / 2)
 
 // Button-style sidebar box
 .button
 	p.link
-		@extend .bg-gradient-secondary
 		@extend .box
-		//@extend .corner-all
-		+border-radius(7px)
-		border-top-right-radius: 7px
-		border-top-left-radius: 7px
-		border-bottom-right-radius: 7px
-		border-bottom-left-radius: 7px
+		@extend .corner-all
 		position: relative
 		width: ($sidebar-width - (($h-gap - $corner-radius) * 2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: #fff
+		color: $g6
 		text-align: center
-		border: 1px solid $primary
+		background: #fff
+		border: 1px solid $g1
 		&:hover
-			@extend .bg-gradient-secondary
+			background: #fafafa
 		a
 			display: block
 			margin: 0
@@ -220,34 +204,32 @@
 			img
 				@extend .box
 				@extend .corner-all
-				@extend .bg-gradient-primary
 				+float-left
 				clear: left
-				width: $content-img-w
-				height: $content-img-h
 				margin: 0 ($h-gap / 2) 5px 0
+				border: 1px solid $g3
 				z-index: 100
 			h1
-				@extend .font-Helvetica
+				@extend .font-base
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0 $corner-radius
-				color: $section-title !important
+				padding: 0 3em 3px $corner-radius
+				color: $g9 !important
+				text-shadow: 0px 1px 1px #fff
 				font-size: 22px
 				font-weight: bolder
-				word-spacing: .1em
-				letter-spacing: -0.05em
-				border-bottom: 1px solid $section-lines
+				border-bottom: 1px solid $g2
 			h4
 				@extend .font-base
 				@extend .box
 				width: ($content-width)
 				margin: ($v-gap/2) 0 0 0
 				padding: 0 0 0 $corner-radius
-				color: $secondary
+				color: $g8
 				font-size: 13px
 				font-weight: bold
+				text-transform: uppercase
 				text-align: justify
 				line-height: 1.2em
 			p
@@ -256,7 +238,7 @@
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
 				padding: 0 0 0 $corner-radius
-				color: $section-text
+				color: $g7
 				font-size: 12px
 				font-weight: 200
 				text-align: justify
@@ -264,23 +246,33 @@
 				&:last-child
 					margin-bottom: 0
 				a
-					color: $primary-light
+					color: #000
 					text-decoration: none
+					border-bottom: 1px dotted $g2
 					&:hover
-						color: $primary
+						color: $g7
+						border-bottom: 1px solid transparent
+			ul
+				list-style: disc
+				li
+					@extend .font-base
+					color: $g7
+					font-size: 12px
+					font-weight: 200
+					line-height: 1.7em
+						
 
 .container-setup
 	@extend .box
 	@extend .corner-all
 	@extend .clearfix
-	@extend .bg-gradient-primary
 	position: relative
 	+float-left
 	clear: both
 	width: $sidebar-width
 	margin: 0 0 $v-gap 0
-	//background: $option-bg
-	border: 1px solid $option-border
+	background: url(/images/bg-trans1.png) repeat
+	border: 1px solid $g3
 	z-index: 20
 
 .columns

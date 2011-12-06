@@ -1,8 +1,8 @@
-.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
+.font-helvetica, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-arial, .font-base, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .text p, .form p, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .main .content .section ul li, .main .content .main ul li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -40,7 +40,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)";
 }
 
-.bg-gradient-secondary, .button p.link, .button p.link:hover {
+.bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 4px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -204,11 +204,11 @@ i {
   font-style: oblique;
 }
 
-.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
+.font-helvetica, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-arial, .font-base, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .text p, .form p, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .main .content .section ul li, .main .content .main ul li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -224,7 +224,7 @@ i {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -246,7 +246,7 @@ i {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)";
 }
 
-.bg-gradient-secondary, .button p.link, .button p.link:hover {
+.bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -337,7 +337,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 4px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -356,9 +356,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
 }
 .banner .center {
-  padding: 30px 0 15px;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
+  padding: 15px 0;
 }
 .banner .center .content {
 @extent .box;
@@ -371,7 +369,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 205px;
   margin: 0;
   padding: 0;
-  border: 1px solid #dddddd;
+  border: 1px solid #bcbec0;
 }
 
 .body {
@@ -381,8 +379,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center {
   padding: 15px 0;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
 }
 .body .center .content {
 @extent .box;
@@ -411,8 +407,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .subnav h1, .text h1, .form h1, .button h1, .form h1 {
   position: relative;
-  color: white;
-  background: transparent;
+  color: #414042;
   width: 240px;
   margin: 0 auto;
   padding: 1em 0;
@@ -421,10 +416,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-align: left;
 }
 .subnav h3, .text h3, .form h3, .button h3, .form h3 {
-  font-family: "EmbedFont-1";
   position: relative;
-  color: white;
-  background: transparent;
+  color: #414042;
   width: 240px;
   margin: 0 auto;
   padding: 0;
@@ -435,7 +428,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .link {
-  font-family: "EmbedFont-1";
   position: relative;
   width: 240px;
   margin: 0 auto;
@@ -456,7 +448,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 5px;
   width: 7px;
   height: 7px;
-  background: #499ad6;
+  background: #d53927;
   font-size: 11px;
   text-align: center;
 }
@@ -468,50 +460,40 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 200px;
   margin: 0;
   padding: 0 0 0 1em;
-  font-size: 13px;
+  font-size: 12px;
 }
 .link p a {
   font-size: 12px;
-  color: #a71f63;
+  color: #414042;
 }
 .link p a:hover {
-  color: #e02877;
+  color: #d53927;
   text-decoration: none;
 }
 
 .text p, .form p {
-  font-family: "EmbedFont-1";
   width: 240px;
   margin: 0 auto 15px;
   padding: 0;
-  color: white;
-  font-size: 13px;
-  font-weight: 200;
-  text-align: justify;
-  line-height: 1.7em;
+  color: #58595b;
+  font-size: 12px;
 }
 .text p:last-child, .form p:last-child {
   margin-bottom: 15px;
 }
 
 .button p.link {
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -khtml-border-radius: 7px;
-  border-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
   position: relative;
   width: 248px;
   margin: 0 auto 15px;
   padding: 0;
-  color: white;
+  color: #808285;
   text-align: center;
-  border: 1px solid #5ea6db;
+  background: white;
+  border: 1px solid #e6e7e8;
+}
+.button p.link:hover {
+  background: #fafafa;
 }
 .button p.link a {
   display: block;
@@ -551,29 +533,28 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   display: inline;
   float: left;
   clear: left;
-  width: 100px;
-  height: 100px;
   margin: 0 15px 5px 0;
+  border: 1px solid #bcbec0;
   z-index: 100;
 }
 .main .content .section h1, .main .content .main h1 {
   width: 511px;
   margin: 4px 0 10px 115px;
-  padding: 0 3em 0 4px;
-  color: #8ccaee !important;
+  padding: 0 3em 3px 4px;
+  color: #414042 !important;
+  text-shadow: 0px 1px 1px white;
   font-size: 22px;
   font-weight: bolder;
-  word-spacing: 0.1em;
-  letter-spacing: -0.05em;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #d1d3d4;
 }
 .main .content .section h4, .main .content .main h4 {
   width: 626px;
   margin: 15px 0 0 0;
   padding: 0 0 0 4px;
-  color: #a71f63;
+  color: #58595b;
   font-size: 13px;
   font-weight: bold;
+  text-transform: uppercase;
   text-align: justify;
   line-height: 1.2em;
 }
@@ -581,7 +562,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 626px;
   margin: 4px 0 10px 0;
   padding: 0 0 0 4px;
-  color: #666666;
+  color: #6d6e71;
   font-size: 12px;
   font-weight: 200;
   text-align: justify;
@@ -591,11 +572,22 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #8ccaee;
+  color: black;
   text-decoration: none;
+  border-bottom: 1px dotted #d1d3d4;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #5ea6db;
+  color: #6d6e71;
+  border-bottom: 1px solid transparent;
+}
+.main .content .section ul, .main .content .main ul {
+  list-style: disc;
+}
+.main .content .section ul li, .main .content .main ul li {
+  color: #6d6e71;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.7em;
 }
 
 .container-setup, .subnav, .text, .form, .button {
@@ -605,7 +597,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
   width: 300px;
   margin: 0 0 30px 0;
-  border: 1px solid #499ad6;
+  background: url(/images/bg-trans1.png) repeat;
+  border: 1px solid #bcbec0;
   z-index: 20;
 }
 
