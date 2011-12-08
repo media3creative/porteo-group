@@ -481,6 +481,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .text p:last-child, .form p:last-child {
   margin-bottom: 15px;
 }
+.text a, .form a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #a7a9ac;
+}
+.text a:hover, .form a:hover {
+  color: #58595b;
+  border-bottom: 1px solid transparent;
+}
 
 .button p.link {
   position: relative;
